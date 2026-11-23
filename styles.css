@@ -1,0 +1,24 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border: 2px solid red;
+}
+
+.sqr {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+}
+
+.sqr:hover {
+    background-color: lightblue;
+}
