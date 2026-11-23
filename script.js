@@ -2,8 +2,8 @@
 const container = document.querySelector("#container")
 const clearGrid = document.getElementById("clear")
 
-let rows = 8
-let cols = 8
+let rows = 16
+let cols = 16
 
 for(let i = 0; i < cols; i++) {
     let col = document.createElement("div")
@@ -28,12 +28,12 @@ let isMouseDown = false;
 boxes.forEach(box => {
     box.addEventListener("mousedown", () => {
         isMouseDown = true
-        box.style.backgroundColor = "red"
+        box.style.backgroundColor = randomColor()
     });
 
     box.addEventListener("mouseover", () => {
         if (isMouseDown) {
-            box.style.backgroundColor = "red"
+            box.style.backgroundColor = randomColor()
         }
     });
 });
@@ -41,6 +41,14 @@ boxes.forEach(box => {
 document.addEventListener("mouseup", () => {
     isMouseDown = false
 });
+
+
+function randomColor() {
+    let r = Math.floor(Math.random() * 255) + 1;
+    let g = Math.floor(Math.random() * 255) + 1;
+    let b = Math.floor(Math.random() * 255) + 1;
+    return `rgb(${r},${g},${b})`
+}
 
 clearGrid.addEventListener("click", function(){
     boxes.forEach(box => {
