@@ -8,8 +8,7 @@ body {
 
 #container {
     display:flex;
-    
-    border: 2px solid red;
+    border: 1px solid black;
     margin-right: 75px;
     margin-left: 75px;
     height: 750px;
