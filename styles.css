@@ -3,6 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 #container {
@@ -11,14 +12,12 @@ body {
     align-items: center;
     padding: 50px;
     border: 2px solid red;
+    margin-right: 75px;
+    margin-left: 75px;
+    height: 400px;
+    width: 400px;
 }
 
 .sqr {
     border: 1px solid black;
-    height: 100px;
-    width: 100px;
-}
-
-.sqr:hover {
-    background-color: lightblue;
 }
