@@ -2,8 +2,8 @@
 const container = document.querySelector("#container")
 const clearGrid = document.getElementById("clear")
 
-let rows = 4
-let cols = 4
+let rows = 8
+let cols = 8
 
 for(let i = 0; i < cols; i++) {
     let col = document.createElement("div")
@@ -21,11 +21,6 @@ for(let i = 0; i < cols; i++) {
 
 
 const boxes = document.querySelectorAll(".sqr");
-
-boxes.forEach(box => {
-    box.style.height = "(400/cols)px"
-    box.style.width = "(400/rows)px"
-})
 
 
 let isMouseDown = false;

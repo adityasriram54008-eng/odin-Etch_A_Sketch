@@ -8,16 +8,21 @@ body {
 
 #container {
     display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
+    
     border: 2px solid red;
     margin-right: 75px;
     margin-left: 75px;
-    height: 400px;
-    width: 400px;
+    height: 750px;
+    width: 750px;
+}
+
+.cols {
+    display:flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .sqr {
     border: 1px solid black;
+    flex: 1;
 }
